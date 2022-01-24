@@ -20,9 +20,22 @@ const navSlide = () => {
         });
         //Burguer animation
         burger.classList.toggle('toggle');
-        
+
     });
 
 }
 
+const contactBannerActive = () => {
+    const contactButton = document.querySelector('.contactButton');
+    const banner = document.querySelector('.banner');
+    const mainContent = document.querySelector('.main-content');
+
+    contactButton.addEventListener('click', ()=> {
+        banner.classList.toggle('banner-hidden');
+        mainContent.classList.toggle('main-active');
+    });   
+
+}
+
 navSlide();
+contactBannerActive();

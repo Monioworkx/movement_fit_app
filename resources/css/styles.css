@@ -156,6 +156,11 @@ header {
     align-items: center;    
     justify-content: stretch;
     grid-gap: 5px;
+    
+}
+
+.main-active {
+    filter: blur(8px) brightness(80%) contrast(99%);
 }
 
 .hero {
@@ -421,4 +426,24 @@ footer {
 .toggle .line3 {
     transform: rotate(45deg) translate(-2px, -12px);
     width: 32px;
+}
+
+.banner {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    color: #fff;
+    position: fixed;
+    top: 15vh; 
+    left: 20%;    
+    background-color: rgba(0, 52, 89, 0.95);
+    width: 60vw;
+    height: 60vh;
+    border-radius: 15px;  
+    box-shadow: 8px 8px 16px 0px rgba(12, 12, 12, 0.8);  
+    
+}
+
+.banner-hidden {
+    display: none;   
 }
